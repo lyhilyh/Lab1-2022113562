@@ -54,6 +54,7 @@ class ShardingsphereDemoApplicationTests {
     @Test
     public void queryOrders(){  //分表查询
         Orders orders = ordersMapper.selectOne(1);
+        System.out.println("查看订单");
         System.out.println(orders);
     }
     @Test
